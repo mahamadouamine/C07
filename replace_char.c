@@ -8,18 +8,9 @@ int main() {
 
     // Demande de la chaîne à l'utilisateur
    
-    fgets(chaine, sizeof(chaine), stdin);
-
-    // Suppression du \n final si présent
-    chaine[strcspn(chaine, "\n")] = 0;
-
-
-    // Demande du caractère à remplacer
+    // fgets(chaine, sizeof(chaine), stdin);
+   scanf(" %s %c %c", chaine, &Caractereàremplacé, &Caracterederemplacement);
    
-    scanf(" %c %c", &Caractereàremplacé, &Caracterederemplacement); // Espace avant %c pour consommer le \n précédent
-
-   
-
     // Parcours de la chaîne et remplacement
     for (i = 0; chaine[i] != '\0'; i++) {
         if (chaine[i] == Caractereàremplacé) {
