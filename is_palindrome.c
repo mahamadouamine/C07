@@ -24,9 +24,9 @@ int main() {
 
   // Afficher le résultat
   if (Palindrome) {
-    printf("\"%s\" est un palindrome.\n", chaine);
+    printf("La chaîne est un palindrome.");
   } else {
-    printf("\"%s\" n'est pas un palindrome.\n", chaine);
+    printf("La chaîne n'est pas un palindrome.");
   }
 
   return 0;
