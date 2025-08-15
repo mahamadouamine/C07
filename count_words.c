@@ -4,7 +4,7 @@
 int main() {
     char texte[1000];
     int i = 0, compteur = 0;
-    int in_mot = 0;
+    int mot = 0;
 
     fgets(texte, sizeof(texte), stdin);
 
@@ -12,14 +12,14 @@ int main() {
         char c = texte[i];
 
         if (isalnum(c)) {
-            if (!in_mot) {
+            if (!mot) {
                 compteur++;
-                in_mot = 1;
+                mot = 1;
             }
         }
        
         else if (isspace(c) || ispunct(c)) {
-            in_mot = 0;
+            mot = 0;
         }
 
         i++;
