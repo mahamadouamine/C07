@@ -14,7 +14,7 @@ int main() {
         }
     }
 
-    printf("Résultat: %s\n", chaine);
+    printf("%s\n", chaine);
 
     return 0;
 }
